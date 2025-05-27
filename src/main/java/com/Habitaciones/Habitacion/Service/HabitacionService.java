@@ -42,7 +42,7 @@ public class HabitacionService {
         return new ArrayList<>();
     }
 
-    public boolean agregarCamasHabitacion(int habitacion_id, Camas camas){
+    public boolean agregarCamasHabitaciones(int habitacion_id, Camas camas){
         Habitacion habitacion = habitacionRepository.buscarPorId(habitacion_id);
         if (habitacion != null) {
             if (habitacion.getCamas() == null){
