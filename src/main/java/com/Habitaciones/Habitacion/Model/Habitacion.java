@@ -28,7 +28,7 @@ public class Habitacion {
     private String NumeroHabit; //Numero de la Habitacion
     private String TipoHabitacion;
     private int CapacidadMax;
-    //public Cama cama;
+    
 
     @OneToMany(mappedBy = "habitacion",cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference
